@@ -11,7 +11,7 @@
 <body>
     <div id="collage">
         <h2>Jigsaw Puzzle</h2>
-    
+        <div id="coin"></div>
         <div id="playPanel" style="padding:5px;display:none;background-color:#0c2034;">
             <h3 id="imgTitle"></h3>
            
@@ -68,6 +68,25 @@
             function about() {
                 alert('Developed by Anurag Gandhi. \nHe can be contacted at: soft.gandhi@gmail.com');
             }
+            document.getElementById("coin").innerHTML = `
+<div style="width:300px;height:auto;padding:20px;border:4px solid white;border-radius:7px">
+<img src="../../src/images/coin.png" width="100px" height="100px"><span style="color:white;">${localStorage.getItem("Coin")}  Coins</span></div>
+
+`       
+
+        </script>
+        <script>
+             var gameOver=document.getElementById(gameOver);
+             if(gameOver.style.display=="block"){
+                var userName=localStorage.getItem("UserName")
+                if(userName==null){
+                    alert("You didn't enter the Name so mission Failed");
+                    location.href="../../Pages/game1.html"
+                }
+                else{
+                    
+                }
+             }
         </script>
     </div>
 </body>

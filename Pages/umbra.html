@@ -5,20 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videos</title>
     <link rel="icon" type="image/png" href="../src/images/fav.png"/>
+    <style>
+        .video{
+            width: 200px;
+            height: auto;
+        }
+        .main_container_video{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .para{
+            text-align: center;
+        }
+        .navbar{
+            background-color:#131520 ;
+        }
+    </style>
+    <link rel="stylesheet" href="../styleSheet/index.css">
 </head>
-<body>
+<body background-color="#131520">
+
+    <div class="navbar">
+        <div class="nav-left">
+            <img src="../src/images/logo-png.png" alt="LOGO" width="150px" height="150px" class="logo" id="logo">
+        </div>
+        <div class="nav-right">
+            <ul type="none" class="nav-list">
+                <a href="../index.html">
+                    <li class="nav-link">Home</li>
+                </a>
+                <a href="./Pages/game1.html" target="_blank" rel="noopener noreferrer">
+                    <li class="nav-link">Game</li>
+                </a>
+                <a href="./Pages/infohub.html">
+                    <li class="nav-link">InfoHub</li>
+                </a>
+                <a href="https://kaviyarasu26.github.io/symposium/content/m2.html" target="_blank"
+                    rel="noopener noreferrer">
+                    <li class="nav-link">Reality</li>
+                </a>
+                <a href="../Pages/model.html">
+                    <li class="nav-link">Model</li>
+                </a>
+                <a href="../Pages/umbra.html">
+                    <li class="nav-link">Video</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div style="width: 100%;height: 100px;"></div>
     <div class="main_container_video">
-        <div class="video">
-            <video src="" class="video"></video>
-            <P class="para"></P>
-        </div>
-        <div class="video">
-            <video src="" class="video"></video>
-            <P class="para"></P>
-        </div>
-        <div class="video">
-            <video src="" class="video"></video>
-            <P class="para"></P>
+        <div class="div">
+            <div class="video">
+                <video src="../src/video/3d video.mp4"  class="video"></video>
+                <P class="para">3D Video</P>
+            </div>
+            <div class="video">
+                <video src="../src/video/AR.mp4" class="video"></video>
+                <P class="para">AR video</P>
+            </div>
+            <div class="video">
+                <video src="../src/video/solar.mp4" class="video"></video>
+                <P class="para">Solor Eclipse</P>
+            </div>
         </div>
     </div>
 </body>

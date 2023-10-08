@@ -39,6 +39,8 @@ function computerChoice(e) {
     (e.target.innerText.trim() == "Scissors" && result.innerHTML == "Rock")
   ) {
     msg = "Computer wins"
+    localStorage.setItem("Coin",0);
+    location.href="../Pages/game1.html";
     setTimeout(() => alert(msg), 100);
   }
 }
