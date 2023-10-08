@@ -33,7 +33,7 @@ function init() {
 
 
   const loader = new GLTFLoader();
-  loader.load('../model/Earth/Earth_1_12756.glb', function (gltf) {
+  loader.load('https://kaviyarasu26.github.io/eklipso/model/Earth/Earth_1_12756.glb', function (gltf) {
     Earth = gltf.scene.children[0];
     Earth.scale.set(0.6, 0.6, 0.6);
     Earth.position.x = -400;
