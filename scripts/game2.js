@@ -20,27 +20,43 @@ switch (pickAWord) {
    answer="gravitational forces";
     break;
 }
+console.log(answer);
 
 var popup= document.getElementById("pop-up");
 
 
-function Check(){
+function check(){
     var userInput =document.getElementById("userInput");
+    popup.style.display="flex";
     if(answer==userInput.value){
         popup.innerHTML=`
         <div class="center">
             <div>
                 <P>You got your second map.</P>
-                <button>Leve 3</button>
+                <button onClick="level3()">Leve 3</button>
             </div>
         </div>
         `
     }else{
+        popup.innerHTML=`
+        <div class="center">
+            <div>
+                <P>Retry</P>
+                <button onClick="level1()">Level 1</button>
+            </div>
+        </div>
         
+        `
     }
 }
 
+function level1(){
+  window.location.href ="../Pages/game1.html";
+}
 
+function level3(){
+  window.location.href ="../Pages/game3.html"
+}
 
 
 
