@@ -1,0 +1,105 @@
+:root{
+    --primary-color: #131520;
+    --secondary-color: #40476c;
+    --third-color: #8392de;
+    --final-color: #ffffff;
+    --font-maxsize:20;
+    --font-minsize:10;
+    --font-average:17;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.main-container{
+    width: 100%;
+   min-height: 100vh;
+}
+
+#background{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    /*background-image: url(../src/images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    position: absolute;
+    z-index: -2;
+    
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.logo{
+    margin-top: 20px;
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.nav-right{
+    width: 60%;
+}
+.nav-list{
+    display: flex;
+    column-gap: 100px;
+    
+}
+.nav-link{
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color:rgb(249, 103, 50);
+}
+
+.web-conatiner-main{
+    width: 100%;
+   min-height: 90vh;
+}
+
+.heading{
+    color: white;
+    margin: 10px;
+}
+.para{
+    color: lightgray;
+    margin: 30px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.start-btn{
+    color: white;
+    background-color: green;
+    padding: 10px 70px ;
+    margin-left: 20px  ;
+}
+.aline{
+    position: absolute;
+    width: 500px;
+    right:200px;
+    top: 300px;
+}

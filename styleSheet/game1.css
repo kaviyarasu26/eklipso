@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pixelify Sans', cursive;
+}
+body{
+    background-color: rgb(238, 236, 236);
+}
+
+.Heading{
+    text-align: center;
+    margin: 26px;
+    font-size: 27px;
+}
+.box{
+    text-align: center;
+    margin: 20px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+.input-boxes{
+    text-align: center;
+}
+.input-text{
+    width: 30px;
+    height: 30px;
+    font-size: 26px;
+    text-align: center;
+    margin: 5px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.info{
+    font-size: 10px;
+    text-align: center;
+}
+.btn,.btn2{
+    width: 150px;
+    color: white;
+    background-color: rgb(7, 160, 7);
+    padding: 10px 40px;
+    border: none;
+    margin: 10px auto;
+    border-radius: 7px;
+}.btn2{
+    background-color: red;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#result{
+    width: 300px ;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 200px;
+    left:40%;
+    border-radius:7px;
+    box-shadow: rgba(55, 55, 56, 0.2) 2px 7px 29px 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pop-up{
+    width: 97%;
+    height: 97%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
