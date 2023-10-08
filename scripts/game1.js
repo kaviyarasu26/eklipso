@@ -1,3 +1,8 @@
+var UserName =window.prompt("Enter Your User Name ");
+
+localStorage.setItem("UserName",UserName);
+localStorage.setItem("Coin",0);
+
 const jumbleWords = [
     "eklipso"
     , "syzygy"
@@ -10,6 +15,12 @@ const jumbleWords = [
     , "eclipse season"
     , "blood moon"
     , "diamond ring"]
+
+    var collection=document.getElementById("collection");
+
+jumbleWords.forEach((ele)=>{
+    collection.innerHTML+=ele+" ,"
+})
 
 var pickAWord=jumbleWords[Math.floor(Math.random()*jumbleWords.length)]
 //console.log(pickAWord);
@@ -87,6 +98,7 @@ console.log(pickAWord);
 
 function level1(){
     window.location.href ="../Pages/game1.html";
+    localStorage.set
 }
 function leve2(){
     window.location.href ="../Pages/game2.html"
