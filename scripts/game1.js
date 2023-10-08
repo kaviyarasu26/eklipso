@@ -94,12 +94,15 @@ function Check(){
         `
     }
 }
+document.getElementById("coin").innerHTML=`<img src="../src/images/coin.png" width="100px" height="100px">${localStorage.getItem("Coin")}  Coins`
 console.log(pickAWord);
 
 function level1(){
     window.location.href ="../Pages/game1.html";
-    localStorage.set
+    localStorage.setItem("Coin",0)
 }
 function leve2(){
-    window.location.href ="../Pages/game2.html"
+    window.location.href ="../Pages/game2.html";
+    localStorage.setItem("Coin",20)
+
 }

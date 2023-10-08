@@ -24,25 +24,28 @@ console.log(answer);
 
 var popup= document.getElementById("pop-up");
 
+document.getElementById("coin").innerHTML=`<img src="../src/images/coin.png" width="100px" height="100px">${localStorage.getItem("Coin")}  Coins`
 
 function check(){
     var userInput =document.getElementById("userInput");
     popup.style.display="flex";
     if(answer==userInput.value){
+      localStorage.setItem("Coin",40)
         popup.innerHTML=`
         <div class="center">
             <div>
                 <P>You got your second map.</P>
-                <button onClick="level3()">Leve 3</button>
+                <button onClick="level3()" class="btn">Leve 3</button>
             </div>
         </div>
         `
     }else{
+      localStorage.setItem("Coin",0)
         popup.innerHTML=`
         <div class="center">
             <div>
                 <P>Retry</P>
-                <button onClick="level1()">Level 1</button>
+                <button onClick="level1()" class="btn2">Level 1</button>
             </div>
         </div>
         
