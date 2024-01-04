@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA</title>
+    <link rel="icon" type="image/png" href="./src/images/fav.png"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styleSheet/index.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div id="background"></div>
+        <div class="web-container">
+            <div class="navbar">
+                <div class="nav-left">
+                    <img src="./src/images/logo-png.png" alt="LOGO" width="150px" height="150px" class="logo" id="logo">
+                </div>
+                <div class="nav-right">
+                    <ul type="none" class="nav-list">
+                        <li class="nav-link">Home</li>
+                        <a href="./Pages/game1.html" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-link">Game</li>
+                        </a>
+                        <a href="./Pages/infohub.html"><li class="nav-link">InfoHub</li></a>
+                        <a href="https://kaviyarasu26.github.io/symposium/content/m2.html" target="_blank" rel="noopener noreferrer">
+                            <li class="nav-link">Reality</li>
+                        </a>
+                        <a href="./Pages/model.html"><li class="nav-link">Model</li></a>
+                        <a href="./Pages/umbra.html"><li class="nav-link">Video</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="web-conatiner-main">
+                <div class="aline">
+                    <h2 class="heading">Eclipse</h2>
+                    <p class="para">"Eclipse" refers to the partial or complete blockage of one astronomical object's
+                        light by another. When the Earth, Moon, and Sun are lined up, an eclipse of the Sun or Moon
+                        takes place. The Greek word "ἔκλειψις, ekleípō" that gives us the term "eclipse" means
+                        "abandonment." The Greeks thought of a solar eclipse as the Sun leaving Earth.
+                    </p>
+                    <a href="./Pages/game1.html" target="_blank" rel="noopener noreferrer"><button
+                            class="custom-btn btn-12"><span>Click! Me</span><span>Read More</span></button></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "./src/build/three.module.js",
+                "three/addons/": "./src/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="./scripts/index.js"></script>
+    <script src="./scripts/normal.js"></script>
+</body>
+
+</html>
